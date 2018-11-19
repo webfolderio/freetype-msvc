@@ -1,4 +1,4 @@
-version: 1.0.'{build}'
+version: 2.8.1
 image: Visual Studio 2015
 
 branches:
@@ -22,11 +22,11 @@ build_script:
   - 7z a -r freetype_x64_windows_static.zip C:\tools\vcpkg\packages\freetype_x64-windows-static\*
 
 artifacts:
-  - path: freetype_x86_windows.zip
-    name: freetype x86
-  - path: freetype_x86_windows_static.zip
-    name: freetype x86 static
-  - path: freetype_x64_windows.zip
-    name: freetype x64
-  - path: freetype_x86_windows_static.zip
-    name: freetype x86 static
+  - path: freetype_2.8.1_x86_windows.zip
+    name: freetype 2.8.1 x86
+  - path: freetype_2.8.1_x86_windows_static.zip
+    name: freetype 2.8.1 x86 static
+  - path: freetype_2.8.1_x64_windows.zip
+    name: freetype 2.8.1 x64
+  - path: freetype_2.8.1_x64_windows_static.zip
+    name: freetype 2.8.1 x64 static
