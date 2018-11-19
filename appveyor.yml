@@ -6,8 +6,8 @@ configuration: Release
 
 init:
     - git config --global core.autocrlf input
-    - copy x86-windows-static-crt.cmake c:\tools\vcpkg\triplets
-    - copy x64-windows-static-crt.cmake c:\tools\vcpkg\triplets
+    - copy freetype-msvc\x86-windows-static-crt.cmake c:\tools\vcpkg\triplets
+    - copy freetype-msvc\x64-windows-static-crt.cmake c:\tools\vcpkg\triplets
 
 build_script:
   - vcpkg install freetype:x86-windows-static-crt
