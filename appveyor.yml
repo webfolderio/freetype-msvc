@@ -14,10 +14,18 @@ before_build:
 build_script:
   - vcpkg install freetype:x86-windows-static-crt
   - vcpkg install freetype:x64-windows-static-crt
-  - 7z a -r freetype_2.8.1_x86_windows_dll.zip C:\tools\vcpkg\packages\freetype_x86-windows-static-crt\*
-  - 7z a -r freetype_2.8.1_x64_windows_dll.zip C:\tools\vcpkg\packages\freetype_x64-windows-static-crt\*
+  - 7z a -r freetype_2.8.1_x86_windows_static_crt_dll.zip C:\tools\vcpkg\packages\freetype_x86-windows-static-crt\*
+  - 7z a -r freetype_2.8.1_x64_windows_static_crt_dll.zip C:\tools\vcpkg\packages\freetype_x64-windows-static-crt\*
+  - vcpkg install freetype:x86-windows
+  - vcpkg install freetype:x64-windows
+  - 7z a -r freetype_2.8.1_x86_windows_dll.zip C:\tools\vcpkg\packages\freetype_x86-windows\*
+  - 7z a -r freetype_2.8.1_x64_windows_dll.zip C:\tools\vcpkg\packages\freetype_x64-windows\*
 
 artifacts:
+  - path: freetype_2.8.1_x86_windows_static_crt_dll.zip
+    name: freetype 2.8.1 x86 static crt DLL
+  - path: freetype_2.8.1_x64_windows_static_crt_dll.zip
+    name: freetype 2.8.1 x64 static crt DLL
   - path: freetype_2.8.1_x86_windows_dll.zip
     name: freetype 2.8.1 x86 DLL
   - path: freetype_2.8.1_x64_windows_dll.zip
