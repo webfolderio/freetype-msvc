@@ -12,10 +12,10 @@ build_script:
   - vcpkg install freetype:x86-windows-static
   - vcpkg install freetype:x64-windows
   - vcpkg install freetype:x64-windows-static
-  - 7z a -r freetype_x86_windows.zip C:\tools\vcpkg\packages\freetype_x86-windows\*
-  - 7z a -r freetype_x86_windows_static.zip C:\tools\vcpkg\packages\freetype_x86-windows-static\*
-  - 7z a -r freetype_x64_windows.zip C:\tools\vcpkg\packages\freetype_x64-windows\*
-  - 7z a -r freetype_x64_windows_static.zip C:\tools\vcpkg\packages\freetype_x64-windows-static\*
+  - 7z a -r freetype_2.8.1_x86_windows.zip C:\tools\vcpkg\packages\freetype_x86-windows\*
+  - 7z a -r freetype_2.8.1_x86_windows_static.zip C:\tools\vcpkg\packages\freetype_x86-windows-static\*
+  - 7z a -r freetype_2.8.1_x64_windows.zip C:\tools\vcpkg\packages\freetype_x64-windows\*
+  - 7z a -r freetype_2.8.1_x64_windows_static.zip C:\tools\vcpkg\packages\freetype_x64-windows-static\*
 
 artifacts:
   - path: freetype_2.8.1_x86_windows.zip
