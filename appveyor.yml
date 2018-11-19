@@ -1,0 +1,16 @@
+version: 1.0.'{build}'
+image: Visual Studio 2015
+
+branches:
+  only:
+    - master
+
+platform: x64
+configuration: Release
+
+init:
+    - git config --global core.autocrlf input
+
+build_script:
+  - vcpkg install freetpye
+  - vcpkg install freetype:x86-windows-static
