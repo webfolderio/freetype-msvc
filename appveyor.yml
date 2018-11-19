@@ -12,5 +12,21 @@ init:
     - git config --global core.autocrlf input
 
 build_script:
-  - vcpkg install freetype
+  - vcpkg install freetype:x86-windows
   - vcpkg install freetype:x86-windows-static
+  - vcpkg install freetype:x64-windows
+  - vcpkg install freetype:x64-windows-static
+  - 7z a -r freetype_x86_windows.zip C:\tools\vcpkg\packages\freetype_x86-windows\*
+  - 7z a -r freetype_x86_windows_static.zip C:\tools\vcpkg\packages\freetype_x86-windows-static\*
+  - 7z a -r freetype_x64_windows.zip C:\tools\vcpkg\packages\freetype_x64-windows\*
+  - 7z a -r freetype_x64_windows_static.zip C:\tools\vcpkg\packages\freetype_x64-windows-static\*
+
+artifacts:
+  - path: freetype_x86_windows.zip
+    name: freetype x86
+  - path: freetype_x86_windows_static.zip
+    name: freetype x86 static
+  - path: freetype_x64_windows.zip
+    name: freetype x64
+  - path: freetype_x86_windows_static.zip
+    name: freetype x86 static
