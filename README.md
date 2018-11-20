@@ -1,11 +1,15 @@
 # freetype-msvc
 
+[![AppVeyor](https://img.shields.io/appveyor/ci/WebFolder/freetype-msvc.svg?label=Windows)](https://ci.appveyor.com/project/WebFolder/freetype-msvc)
+
 [freetype](https://www.freetype.org/) dynamic libraries (dll) built with visual studio 2015
 
+# windows x64
 [freetype_2.8.1_x64_windows_dll.zip](https://github.com/webfolderio/freetype-msvc/releases/download/2.8.1/freetype_2.8.1_x64_windows_dll.zip)
 
 [freetype_2.8.1_x64_windows_static_crt_dll.zip](https://github.com/webfolderio/freetype-msvc/releases/download/2.8.1/freetype_2.8.1_x64_windows_static_crt_dll.zip)
 
+# windows x86
 [freetype_2.8.1_x86_windows_dll.zip](https://github.com/webfolderio/freetype-msvc/releases/download/2.8.1/freetype_2.8.1_x86_windows_dll.zip)
 
 [freetype_2.8.1_x86_windows_static_crt_dll.zip](https://github.com/webfolderio/freetype-msvc/releases/download/2.8.1/freetype_2.8.1_x86_windows_static_crt_dll.zip)
